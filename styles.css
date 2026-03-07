@@ -1,0 +1,47 @@
+.tickerlens-highlight {
+  position: relative;
+  background: rgba(46, 160, 67, 0.15);
+  border-bottom: 2px solid #2ea043;
+  border-radius: 3px;
+  padding: 1px 3px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+
+.tickerlens-highlight:hover {
+  background: rgba(46, 160, 67, 0.3);
+}
+
+.tickerlens-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+  z-index: 10000;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tickerlens-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1f2937;
+}
+
+.tickerlens-highlight:hover .tickerlens-tooltip {
+  display: block;
+}
