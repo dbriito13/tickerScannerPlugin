@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["https://community.rationalreminder.ca/*"],
-      "js": ["tickers.js", "content.js"],
+      "js": ["exclusions.js", "tickers.js", "content.js"],
       "css": ["styles.css"],
       "run_at": "document_idle"
     }
