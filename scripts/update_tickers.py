@@ -3,9 +3,12 @@
 Reads unknown tickers from Firestore, validates them via Yahoo Finance,
 and adds valid ones to tickers.js.
 
-Usage: python scripts/update_tickers.py
+Usage:
+  python scripts/update_tickers.py            # process new unknowns from Firestore
+  python scripts/update_tickers.py --refresh  # re-fetch info for all existing tickers
 """
 
+import argparse
 import json
 import re
 import time
@@ -18,6 +21,7 @@ import yfinance as yf
 FIRESTORE_REST = "https://firestore.googleapis.com/v1/projects/tickersymbol-f7117/databases/(default)/documents/unknown_tickers"
 TICKERS_JS_PATH = Path(__file__).resolve().parent.parent / "tickers.js"
 EXCLUSIONS_JS_PATH = Path(__file__).resolve().parent.parent / "exclusions.js"
+PERMANENT_EXCLUSIONS_PATH = Path(__file__).resolve().parent.parent / "permanent_exclusions.js"
 
 
 def read_firestore_unknowns():
@@ -55,9 +59,35 @@ def read_firestore_unknowns():
 EXCHANGE_SUFFIXES = ["", ".SW", ".DE", ".L", ".AS", ".PA", ".MI", ".TO"]
 
 
+_fdb_etfs = None
+_fdb_funds = None
+
+def _fdb_lookup(symbol):
+    """Look up category and family from financedatabase (static offline DB)."""
+    global _fdb_etfs, _fdb_funds
+    try:
+        import financedatabase as fd
+        if _fdb_etfs is None:
+            _fdb_etfs = fd.ETFs()
+            _fdb_funds = fd.Funds()
+
+        # Try bare symbol and with exchange suffixes (e.g. ZPRX.DE)
+        candidates = [symbol] + [symbol + s for s in EXCHANGE_SUFFIXES if s]
+        for db in [_fdb_etfs, _fdb_funds]:
+            df = db.search(summary="", name="")
+            for candidate in candidates:
+                if candidate in df.index:
+                    print(f"    financedatabase: found as {candidate}")
+                    return df.loc[candidate]
+    except Exception as e:
+        print(f"    financedatabase lookup failed: {e}")
+    return None
+
+
 def fetch_ticker_info(symbol):
     """Fetch detailed info for a single ticker via yfinance, trying exchange suffixes."""
     info = None
+    best = None  # best candidate with incomplete data (fallback)
 
     for suffix in EXCHANGE_SUFFIXES:
         try_symbol = symbol + suffix
@@ -67,11 +97,27 @@ def fetch_ticker_info(symbol):
         except Exception:
             continue
 
-        if candidate.get("quoteType") in ("ETF", "MUTUALFUND"):
+        if candidate.get("quoteType") not in ("ETF", "MUTUALFUND"):
+            continue
+
+        has_er = candidate.get("netExpenseRatio") is not None or candidate.get("annualReportExpenseRatio") is not None
+        has_assets = candidate.get("totalAssets") is not None
+
+        if has_er and has_assets:
             info = candidate
             if suffix:
-                print(f"    Found as {try_symbol}")
+                print(f"    Found as {try_symbol} (complete data)")
             break
+
+        # Keep first incomplete match as fallback
+        if best is None:
+            best = candidate
+            if suffix:
+                print(f"    Found as {try_symbol} (incomplete data, trying other suffixes)")
+
+    if info is None and best is not None:
+        info = best
+        print(f"    Using best available match (missing ER or assets)")
 
     if info is None:
         print(f"  {symbol}: not an ETF/fund on any exchange, skipping")
@@ -81,9 +127,39 @@ def fetch_ticker_info(symbol):
     if not name:
         return None
 
-    category = info.get("category", "") or info.get("quoteType", "")
+    # Skip junk: numeric names, or MUTUALFUND with no family and no assets
+    if name.replace(",", "").replace(".", "").strip().isdigit():
+        print(f"  {symbol}: numeric name '{name}' - junk, skipping")
+        return None
+
     family = info.get("fundFamily", "") or ""
     total_assets = info.get("totalAssets")
+    quote_type = info.get("quoteType", "")
+
+    if quote_type == "MUTUALFUND" and not family and not total_assets:
+        print(f"  {symbol}: MUTUALFUND with no family/assets - junk, skipping")
+        return None
+
+    category = info.get("category", "")
+    # Fallback 1: try fund_overview from yfinance
+    if not category or category == quote_type:
+        try:
+            fo = ticker.get_funds_data().fund_overview
+            category = fo.get("categoryName", "") or fo.get("category", "") or ""
+        except Exception:
+            pass
+    # Fallback 2: try financedatabase (static offline DB)
+    fdb = None
+    print(f"  {symbol}: quoteType={quote_type}, category='{category}', family='{family}'")
+    if not category or category == quote_type or not family:
+        fdb = _fdb_lookup(symbol)
+    if not category or category == quote_type:
+        cat_val = fdb["category"] if fdb is not None else ""
+        category = str(cat_val) if cat_val == cat_val else ""  # handle NaN
+    if not family and fdb is not None:
+        fam_val = fdb["family"]
+        family = str(fam_val) if fam_val == fam_val else ""  # handle NaN
+    category = category or quote_type
 
     # netExpenseRatio is already in % (e.g. 0.03 = 0.03%)
     # annualReportExpenseRatio is a decimal (e.g. 0.0003 = 0.03%)
@@ -96,12 +172,24 @@ def fetch_ticker_info(symbol):
     else:
         expense_ratio = None
 
+    beta3y = info.get("beta3Year")
+    ret3y = info.get("threeYearAverageReturn")
+    if ret3y is not None:
+        ret3y = round(ret3y * 100, 2)  # convert decimal to %
+    description = info.get("longBusinessSummary", "") or ""
+    # Clean description: collapse whitespace, remove quotes, cap length
+    description = " ".join(description.split())
+    description = description.replace('"', "'").replace("\\", "")
+
     return {
         "name": name,
         "category": category,
         "family": family,
         "expenseRatio": expense_ratio,
         "totalAssets": total_assets,
+        "beta3Year": round(beta3y, 2) if beta3y is not None else None,
+        "return3Year": ret3y,
+        "description": description,
     }
 
 
@@ -113,38 +201,33 @@ def fetch_all_ticker_info(tickers):
         info = fetch_ticker_info(symbol)
         if info:
             results[symbol] = info
-            print(f"    -> {info['name']} | ER: {info['expenseRatio']}%")
+            print(f"    -> {info['name']} | ER: {info['expenseRatio']}% | Category: {info['category']} | Family: {info['family']}")
         time.sleep(0.3)
     return results
 
 
 def read_tickers_js():
-    """Parse tickers.js and return ticker_dict."""
+    """Read ticker database from tickers.js by parsing the JSON value."""
+    if not TICKERS_JS_PATH.exists():
+        return {}
     text = TICKERS_JS_PATH.read_text()
+    m = re.search(r"const TICKER_DB\s*=\s*", text)
+    if not m:
+        return {}
+    json_str = text[m.end():].rstrip().removesuffix(";")
+    return json.loads(json_str)
 
-    tickers = {}
-    for m in re.finditer(r'"([A-Z.]+)":\s*\{([^}]+)\}', text):
-        symbol = m.group(1)
-        body = m.group(2)
-        name_m = re.search(r'name:\s*"([^"]*)"', body)
-        cat_m = re.search(r'category:\s*"([^"]*)"', body)
-        fam_m = re.search(r'family:\s*"([^"]*)"', body)
-        er_m = re.search(r'expenseRatio:\s*([\d.]+|null)', body)
-        ta_m = re.search(r'totalAssets:\s*([\d.]+|null)', body)
 
-        tickers[symbol] = {
-            "name": name_m.group(1) if name_m else "",
-            "category": cat_m.group(1) if cat_m else "",
-            "family": fam_m.group(1) if fam_m else "",
-            "expenseRatio": float(er_m.group(1)) if er_m and er_m.group(1) != "null" else None,
-            "totalAssets": int(float(ta_m.group(1))) if ta_m and ta_m.group(1) != "null" else None,
-        }
-
-    return tickers
+def read_permanent_exclusions():
+    """Read hand-curated permanent exclusions."""
+    if not PERMANENT_EXCLUSIONS_PATH.exists():
+        return set()
+    text = PERMANENT_EXCLUSIONS_PATH.read_text()
+    return set(re.findall(r'"([A-Z]+)"', text))
 
 
 def read_exclusions():
-    """Read exclusions from exclusions.js."""
+    """Read auto-generated exclusions from exclusions.js."""
     if not EXCLUSIONS_JS_PATH.exists():
         return set()
     text = EXCLUSIONS_JS_PATH.read_text()
@@ -165,37 +248,12 @@ def write_exclusions(exclusions):
 
 
 def write_tickers_js(tickers):
-    """Write tickers back to tickers.js."""
-    lines = []
-    lines.append("// Database of known ETF and fund tickers")
-    lines.append("// Auto-updated by scripts/update_tickers.py")
-    lines.append("const TICKER_DB = {")
-
-    # Group by category
-    by_cat = {}
-    for symbol, info in sorted(tickers.items()):
-        cat = info.get("category", "")
-        by_cat.setdefault(cat, []).append((symbol, info))
-
-    for cat in sorted(by_cat.keys()):
-        lines.append(f"  // --- {cat} ---")
-        for symbol, info in sorted(by_cat[cat]):
-            name = info["name"].replace('"', '\\"')
-            family = info.get("family", "").replace('"', '\\"')
-            er = info.get("expenseRatio")
-            ta = info.get("totalAssets")
-            er_str = str(er) if er is not None else "null"
-            ta_str = str(ta) if ta is not None else "null"
-            lines.append(
-                f'  "{symbol}": {{ name: "{name}", category: "{cat}", '
-                f'family: "{family}", expenseRatio: {er_str}, totalAssets: {ta_str} }},'
-            )
-        lines.append("")
-
-    lines.append("};")
-    lines.append("")
-
-    TICKERS_JS_PATH.write_text("\n".join(lines))
+    """Write tickers to tickers.js as a JSON-valued const for the extension."""
+    js_obj = json.dumps(tickers, indent=2, sort_keys=True)
+    TICKERS_JS_PATH.write_text(
+        "// Auto-generated by scripts/update_tickers.py — do not edit\n"
+        f"const TICKER_DB = {js_obj};\n"
+    )
     print(f"Wrote {len(tickers)} tickers to {TICKERS_JS_PATH}")
 
 
@@ -210,13 +268,49 @@ def delete_firestore_docs(tickers):
             print(f"  Warning: could not delete {symbol}: HTTP {e.code}")
 
 
+def refresh_tickers():
+    """Re-fetch info for all existing tickers in tickers.js."""
+    print("Reading existing tickers.js...")
+    existing = read_tickers_js()
+    print(f"Found {len(existing)} tickers to refresh.\n")
+
+    updated = 0
+    failed = 0
+    for i, symbol in enumerate(sorted(existing)):
+        print(f"  [{i+1}/{len(existing)}] Refreshing {symbol}...")
+        info = fetch_ticker_info(symbol)
+        if info:
+            existing[symbol] = info
+            updated += 1
+        else:
+            print(f"    WARNING: could not fetch {symbol}, keeping old data")
+            failed += 1
+        time.sleep(0.3)
+
+    print(f"\nRefreshed {updated} tickers ({failed} failed).")
+    write_tickers_js(existing)
+    print("Done.")
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Update or refresh ticker database.")
+    parser.add_argument("--refresh", action="store_true",
+                        help="Re-fetch info for all existing tickers in tickers.js")
+    args = parser.parse_args()
+
+    if args.refresh:
+        refresh_tickers()
+        return
+
     print("Reading existing tickers.js...")
     existing = read_tickers_js()
     print(f"Existing tickers: {len(existing)}")
 
+    permanent = read_permanent_exclusions()
+    print(f"Permanent exclusions: {len(permanent)}")
+
     exclusions = read_exclusions()
-    print(f"Existing exclusions: {len(exclusions)}")
+    print(f"Auto-generated exclusions: {len(exclusions)}")
 
     print("\nReading unknown tickers from Firestore...")
     unknowns = read_firestore_unknowns()
@@ -237,6 +331,9 @@ def main():
     added = 0
     rejected = 0
     for symbol in unknowns:
+        if symbol in permanent:
+            print(f"  - {symbol} (permanent exclusion)")
+            continue
         if symbol in validated:
             if symbol not in existing:
                 existing[symbol] = validated[symbol]
