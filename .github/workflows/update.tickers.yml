@@ -1,0 +1,36 @@
+name: Update Tickers
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 6:00 UTC
+  workflow_dispatch:       # Allow manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Process new unknown tickers
+        run: python scripts/update_tickers.py
+
+      - name: Refresh existing tickers
+        run: python scripts/update_tickers.py --refresh
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tickers.js exclusions.js
+          git diff --staged --quiet || git commit -m "chore: auto-update ticker data"
+          git push
