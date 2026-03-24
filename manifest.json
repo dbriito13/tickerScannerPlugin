@@ -3,11 +3,10 @@
   "name": "TickerLens",
   "version": "0.1.0",
   "description": "Detect ETF/fund tickers in forums and highlight them with quick info.",
-  "permissions": [],
   "content_scripts": [
     {
       "matches": ["https://community.rationalreminder.ca/*"],
-      "js": ["exclusions.js", "tickers.js", "content.js"],
+      "js": ["permanent_exclusions.js", "exclusions.js", "tickers.js", "content.js"],
       "css": ["styles.css"],
       "run_at": "document_idle"
     }

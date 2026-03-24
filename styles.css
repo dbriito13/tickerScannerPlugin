@@ -22,5 +22,10 @@
   line-height: 1.5;
   z-index: 10000;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
-  max-width: 300px;
+  max-width: 340px;
+}
+
+.tickerlens-popup .tl-label {
+  color: #9ca3af;
+  font-size: 12px;
 }

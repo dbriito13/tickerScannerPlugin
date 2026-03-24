@@ -3,28 +3,33 @@
 
   const SKIP_TAGS = new Set(["SCRIPT", "STYLE", "TEXTAREA", "INPUT", "CODE", "PRE"]);
   const OBSERVE_OPTS = { childList: true, subtree: true };
-  const FIRESTORE_URL = "https://firestore.googleapis.com/v1/projects/tickersymbol-f7117/databases/(default)/documents/unknown_tickers";
+  const SUBMIT_URL = "https://tickersymbol-writer-417743378789.europe-west1.run.app";
   let observer = null;
   let scanCount = 0;
   const reportedThisSession = new Set();
+
+  function formatAssets(n) {
+    if (n >= 1e12) return `$${(n / 1e12).toFixed(1)}T`;
+    if (n >= 1e9) return `$${(n / 1e9).toFixed(1)}B`;
+    if (n >= 1e6) return `$${(n / 1e6).toFixed(1)}M`;
+    return `$${n.toLocaleString()}`;
+  }
 
   function reportUnknownTicker(ticker) {
     if (reportedThisSession.has(ticker)) return;
     reportedThisSession.add(ticker);
 
-    fetch(`${FIRESTORE_URL}/${ticker}`, {
-      method: "PATCH",
+    console.log(`[TickerLens] Reporting unknown ticker: ${ticker}`);
+    fetch(SUBMIT_URL, {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        fields: {
-          seen_count: { integerValue: "1" },
-          last_seen: { timestampValue: new Date().toISOString() },
-        },
-      }),
-    }).catch(() => {});
+      body: JSON.stringify({ ticker }),
+    }).then(r => console.log(`[TickerLens] Reported ${ticker}: ${r.status}`))
+      .catch(e => console.warn(`[TickerLens] Failed to report ${ticker}:`, e));
   }
 
   function scanElement(root, source) {
+    if (root.closest && root.closest(".search-menu-panel, .menu-panel")) return;
     scanCount++;
     console.log(`[TickerLens] #${scanCount} from ${source}, element:`, root.tagName, root.className);
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
@@ -38,8 +43,8 @@
 
       const words = text.trim().split(/\s+/);
       for (const word of words) {
-        const clean = word.replace(/^[^a-zA-Z]+|[^a-zA-Z]+$/g, "");
-        if (clean.length >= 2 && clean.length <= 5 && /^[A-Z]+$/.test(clean) && !TICKER_EXCLUSIONS.has(clean)) {
+        const clean = word.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "");
+        if (clean.length >= 2 && clean.length <= 6 && /^[A-Z0-9]{2,6}$/.test(clean) && /[A-Z]/.test(clean) && !PERMANENT_EXCLUSIONS.has(clean) && !TICKER_EXCLUSIONS.has(clean)) {
           if (TICKER_DB[clean]) {
             candidates.push(clean); // Known ticker
           } else {
@@ -83,7 +88,20 @@
     const popup = document.createElement("div");
     popup.className = "tickerlens-popup";
     if (info) {
-      popup.innerHTML = `<strong>${ticker}</strong><br>${info.name}<br><em>${info.category}</em>`;
+      const er = info.expenseRatio != null ? `${info.expenseRatio}%` : "N/A";
+      const assets = info.totalAssets != null ? formatAssets(info.totalAssets) : "N/A";
+      const beta = info.beta3Year != null && info.beta3Year !== 0 ? info.beta3Year.toFixed(2) : "N/A";
+      const ret3 = info.return3Year != null ? `${info.return3Year}%` : "N/A";
+      popup.innerHTML = [
+        `<strong>${ticker}</strong> — ${info.name}`,
+        `<span class="tl-label">Category:</span> ${info.category}`,
+        info.family ? `<span class="tl-label">Family:</span> ${info.family}` : "",
+        `<span class="tl-label">Expense Ratio:</span> ${er}`,
+        `<span class="tl-label">Total Assets:</span> ${assets}`,
+        `<span class="tl-label">Beta (3Y):</span> ${beta}`,
+        `<span class="tl-label">Return (3Y):</span> ${ret3}`,
+        info.description ? `<span class="tl-desc">${info.description}</span>` : "",
+      ].filter(Boolean).join("<br>");
     } else {
       popup.textContent = ticker;
     }
