@@ -22,4 +22,8 @@ const PERMANENT_EXCLUSIONS = new Set([
   // Common words that match ticker patterns
   "AA", "APR", "ATH", "ATL", "AV", "CAN", "CDN", "DD", "EDIT", "EM",
   "EMU", "IPS", "IT", "KB", "NG", "OAT", "RAET", "SOFIX", "SXR", "TCO",
+  // Tax forms and financial statements
+  "10K", "10B",
+  // Miscellaneous
+  "INTL", "MID"
 ]);

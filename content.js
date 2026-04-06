@@ -29,7 +29,7 @@
   }
 
   function scanElement(root, source) {
-    if (root.closest && root.closest(".search-menu-panel, .menu-panel")) return;
+    if (root.closest && root.closest(".search-menu-panel, .menu-panel, .timeline-container")) return;
     scanCount++;
     console.log(`[TickerLens] #${scanCount} from ${source}, element:`, root.tagName, root.className);
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
@@ -41,9 +41,11 @@
       const parent = node.parentElement;
       if (!parent || SKIP_TAGS.has(parent.tagName)) continue;
 
-      const words = text.trim().split(/\s+/);
+      const words = text.trim().split(/[\s/]+/);
       for (const word of words) {
-        const clean = word.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "");
+        // Strip leading/trailing punctuation, then remove exchange suffix like .TO, .DE
+        let clean = word.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "");
+        clean = clean.replace(/\.[A-Z]{1,4}$/, "");
         if (clean.length >= 2 && clean.length <= 6 && /^[A-Z0-9]{2,6}$/.test(clean) && /[A-Z]/.test(clean) && !PERMANENT_EXCLUSIONS.has(clean) && !TICKER_EXCLUSIONS.has(clean)) {
           if (TICKER_DB[clean]) {
             candidates.push(clean); // Known ticker
