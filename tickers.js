@@ -17,7 +17,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares Global Corp Bond UCITS ETF EUR Hedged (Dist)",
-    "return3Year": 3.12,
+    "return3Year": 3.16,
     "totalAssets": null
   },
   "4GLD": {
@@ -47,7 +47,7 @@ const TICKER_DB = {
     "expenseRatio": 0.38,
     "family": "Alpha Architect",
     "name": "Alpha Architect Global Factor Equity ETF",
-    "return3Year": 17.76,
+    "return3Year": 17.52,
     "totalAssets": 26811258
   },
   "ABRVX": {
@@ -67,7 +67,7 @@ const TICKER_DB = {
     "expenseRatio": 0.32,
     "family": "iShares",
     "name": "iShares MSCI ACWI ETF",
-    "return3Year": 21.92,
+    "return3Year": 21.96,
     "totalAssets": 33208487936
   },
   "ACWIS": {
@@ -77,7 +77,7 @@ const TICKER_DB = {
     "expenseRatio": 0.21,
     "family": "UBS Asset Management (Europe) S.A.",
     "name": "UBS MSCI ACWI SF UCITS ETF hCHF acc",
-    "return3Year": 16.94,
+    "return3Year": 16.7,
     "totalAssets": null
   },
   "ACWV": {
@@ -87,7 +87,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "iShares",
     "name": "iShares MSCI Global Min Vol Factor ETF",
-    "return3Year": 11.13,
+    "return3Year": 11.43,
     "totalAssets": 3401104128
   },
   "ADA": {
@@ -107,7 +107,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "iShares",
     "name": "iShares Core U.S. Aggregate Bond ETF",
-    "return3Year": 4.18,
+    "return3Year": 4.09,
     "totalAssets": 138317873152
   },
   "AGGG": {
@@ -137,7 +137,7 @@ const TICKER_DB = {
     "expenseRatio": 0.96,
     "family": "American Beacon",
     "name": "American Beacon AHL Trend ETF",
-    "return3Year": 9.05,
+    "return3Year": 8.73,
     "totalAssets": 150874832
   },
   "AIMOX": {
@@ -177,7 +177,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "iShares",
     "name": "iShares Core 80/20 Aggressive Allocation ETF",
-    "return3Year": 18.07,
+    "return3Year": 18.1,
     "totalAssets": 3291867392
   },
   "APEX": {
@@ -227,7 +227,7 @@ const TICKER_DB = {
     "expenseRatio": 0.23,
     "family": "Avantis Investors",
     "name": "Avantis International Equity ETF",
-    "return3Year": 21.38,
+    "return3Year": 21.34,
     "totalAssets": 19094286336
   },
   "AVDV": {
@@ -237,7 +237,7 @@ const TICKER_DB = {
     "expenseRatio": 0.36,
     "family": "Avantis Investors",
     "name": "Avantis International Small Cap Value ETF",
-    "return3Year": 28.6,
+    "return3Year": 28.27,
     "totalAssets": 20499965952
   },
   "AVEE": {
@@ -267,7 +267,7 @@ const TICKER_DB = {
     "expenseRatio": 0.33,
     "family": "Avantis Investors",
     "name": "Avantis Emerging Markets Equity ETF",
-    "return3Year": 25.14,
+    "return3Year": 25.26,
     "totalAssets": 28053696512
   },
   "AVES": {
@@ -277,7 +277,7 @@ const TICKER_DB = {
     "expenseRatio": 0.36,
     "family": "Avantis Investors",
     "name": "Avantis Emerging Markets Value ETF",
-    "return3Year": 19.13,
+    "return3Year": 19.32,
     "totalAssets": 1543647232
   },
   "AVEU": {
@@ -307,7 +307,7 @@ const TICKER_DB = {
     "expenseRatio": 0.23,
     "family": "Avantis Investors",
     "name": "Avantis All Equity Markets ETF",
-    "return3Year": 21.34,
+    "return3Year": 21.23,
     "totalAssets": 1220531840
   },
   "AVGS": {
@@ -327,7 +327,7 @@ const TICKER_DB = {
     "expenseRatio": 0.26,
     "family": "Avantis Investors",
     "name": "Avantis ALL Equity Markets Value ETF",
-    "return3Year": 21.33,
+    "return3Year": 21.08,
     "totalAssets": 462279552
   },
   "AVIG": {
@@ -337,7 +337,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "Avantis Investors",
     "name": "Avantis Core Fixed Income ETF",
-    "return3Year": 4.43,
+    "return3Year": 4.35,
     "totalAssets": 2000603904
   },
   "AVIV": {
@@ -347,7 +347,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "Avantis Investors",
     "name": "Avantis International Large Cap Value ETF",
-    "return3Year": 22.74,
+    "return3Year": 22.42,
     "totalAssets": 2076109184
   },
   "AVMA": {
@@ -357,7 +357,7 @@ const TICKER_DB = {
     "expenseRatio": 0.21,
     "family": "Avantis Investors",
     "name": "Avantis Moderate Allocation ETF",
-    "return3Year": 15.81,
+    "return3Year": 15.66,
     "totalAssets": 88236344
   },
   "AVNM": {
@@ -367,7 +367,7 @@ const TICKER_DB = {
     "expenseRatio": 0.31,
     "family": "Avantis Investors",
     "name": "Avantis All International Markets Equity ETF",
-    "return3Year": 22.66,
+    "return3Year": 22.57,
     "totalAssets": 756694208
   },
   "AVNV": {
@@ -377,7 +377,7 @@ const TICKER_DB = {
     "expenseRatio": 0.34,
     "family": "Avantis Investors",
     "name": "Avantis All International Markets Value ETF",
-    "return3Year": 23.04,
+    "return3Year": 22.9,
     "totalAssets": 77114792
   },
   "AVRE": {
@@ -387,7 +387,7 @@ const TICKER_DB = {
     "expenseRatio": 0.17,
     "family": "Avantis Investors",
     "name": "Avantis Real Estate ETF",
-    "return3Year": 9.55,
+    "return3Year": 9.85,
     "totalAssets": 861123584
   },
   "AVSC": {
@@ -397,7 +397,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "Avantis Investors",
     "name": "Avantis US Small Cap Equity ETF",
-    "return3Year": 18.14,
+    "return3Year": 17.55,
     "totalAssets": 3111787264
   },
   "AVSG": {
@@ -427,7 +427,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "Avantis Investors",
     "name": "Avantis US Equity ETF",
-    "return3Year": 22.17,
+    "return3Year": 22.08,
     "totalAssets": 14456113152
   },
   "AVUV": {
@@ -437,7 +437,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "Avantis Investors",
     "name": "Avantis US Small Cap Value ETF",
-    "return3Year": 17.67,
+    "return3Year": 16.92,
     "totalAssets": 31173472256
   },
   "AVWC": {
@@ -467,7 +467,7 @@ const TICKER_DB = {
     "expenseRatio": 0.28,
     "family": "Invesco",
     "name": "Invesco Taxable Municipal Bond ETF",
-    "return3Year": 4.41,
+    "return3Year": 4.21,
     "totalAssets": 900732864
   },
   "BCOM": {
@@ -497,7 +497,7 @@ const TICKER_DB = {
     "expenseRatio": 0.59,
     "family": "Cambria",
     "name": "Cambria Global Real Estate ETF",
-    "return3Year": 9.63,
+    "return3Year": 9.65,
     "totalAssets": 54847492
   },
   "BLNDX": {
@@ -517,7 +517,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Total Bond Market Index Fund ETF Shares",
-    "return3Year": 4.18,
+    "return3Year": 4.07,
     "totalAssets": 398834597888
   },
   "BOND": {
@@ -527,7 +527,7 @@ const TICKER_DB = {
     "expenseRatio": 0.54,
     "family": "PIMCO",
     "name": "PIMCO Active Bond Exchange-Traded Fund",
-    "return3Year": 4.98,
+    "return3Year": 4.79,
     "totalAssets": 8590745600
   },
   "BOXX": {
@@ -537,7 +537,7 @@ const TICKER_DB = {
     "expenseRatio": 0.19,
     "family": "Alpha Architect",
     "name": "Alpha Architect 1-3 Month Box ETF",
-    "return3Year": 4.65,
+    "return3Year": 4.61,
     "totalAssets": 14470497280
   },
   "BTAL": {
@@ -547,7 +547,7 @@ const TICKER_DB = {
     "expenseRatio": 1.4,
     "family": "AGF Investments LLC",
     "name": "AGF U.S. Market Neutral Anti-Beta Fund",
-    "return3Year": -12.59,
+    "return3Year": -12.08,
     "totalAssets": 301130656
   },
   "BTC": {
@@ -597,7 +597,7 @@ const TICKER_DB = {
     "expenseRatio": 0.63,
     "family": "Alpha Architect",
     "name": "Alpha Architect Tail Risk ETF",
-    "return3Year": 3.59,
+    "return3Year": 3.65,
     "totalAssets": 672442048
   },
   "CAPE": {
@@ -607,7 +607,7 @@ const TICKER_DB = {
     "expenseRatio": 0.65,
     "family": "DoubleLine ETF Trust",
     "name": "DoubleLine Shiller CAPE U.S. Equities ETF",
-    "return3Year": 10.75,
+    "return3Year": 11.0,
     "totalAssets": 242640976
   },
   "CASH": {
@@ -617,7 +617,7 @@ const TICKER_DB = {
     "expenseRatio": 0.11,
     "family": "Global X Investments Canada Inc.",
     "name": "Global X High Interest Savings ETF",
-    "return3Year": 3.3,
+    "return3Year": 3.26,
     "totalAssets": 6546414592
   },
   "CBIL": {
@@ -647,7 +647,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares Edge MSCI Europe Momentum Factor UCITS ETF EUR (Acc)",
-    "return3Year": 20.99,
+    "return3Year": 20.91,
     "totalAssets": 761659008
   },
   "CEMU": {
@@ -667,7 +667,7 @@ const TICKER_DB = {
     "expenseRatio": 0.67,
     "family": "VanEck",
     "name": "VanEck CMCI Commodity Strategy ETF",
-    "return3Year": 12.97,
+    "return3Year": 13.13,
     "totalAssets": 3124468
   },
   "CORE": {
@@ -687,7 +687,7 @@ const TICKER_DB = {
     "expenseRatio": 0.34,
     "family": "UBS Asset Management (Europe) S.A.",
     "name": "UBS CMCI Commodity Carry SF UCITS ETF hCHF acc",
-    "return3Year": -5.9,
+    "return3Year": -5.66,
     "totalAssets": null
   },
   "CPI": {
@@ -717,7 +717,7 @@ const TICKER_DB = {
     "expenseRatio": 0.75,
     "family": "Simplify Asset Management",
     "name": "Simplify Managed Futures Strategy ETF",
-    "return3Year": 8.63,
+    "return3Year": 7.55,
     "totalAssets": 1593072000
   },
   "DAX": {
@@ -727,7 +727,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "Global X Funds",
     "name": "Global X DAX Germany ETF",
-    "return3Year": 20.49,
+    "return3Year": 20.38,
     "totalAssets": 227903088
   },
   "DBMF": {
@@ -737,7 +737,7 @@ const TICKER_DB = {
     "expenseRatio": 0.85,
     "family": "iM Global Partner Fund Management",
     "name": "iMGP DBi Managed Futures Strategy ETF",
-    "return3Year": 9.8,
+    "return3Year": 9.47,
     "totalAssets": 4108683776
   },
   "DBMFE": {
@@ -757,7 +757,7 @@ const TICKER_DB = {
     "expenseRatio": 0.35,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers LevDAX Daily Swap UCITS ETF 1C",
-    "return3Year": 30.36,
+    "return3Year": 30.41,
     "totalAssets": 53834488
   },
   "DBPG": {
@@ -781,14 +781,14 @@ const TICKER_DB = {
     "totalAssets": 1407348736
   },
   "DCOR": {
-    "beta3Year": 0.0,
+    "beta3Year": null,
     "category": "Large Blend",
-    "description": "To achieve the fund's investment objective, the advisor implements an integrated investment approach that combines research, portfolio design, portfolio management, and trading functions. The ETF is designed to purchase a broad and diverse group of equity securities of U.S. companies. As a non-fundamental policy, under normal circumstances, the ETF will invest at least 80% of its net assets in equity securities within a market capitalization weighted universe of U.S. operating companies listed on a securities exchange in the United States.",
-    "expenseRatio": 0.14,
+    "description": "The fund purchases a broad and diverse group of securities of U.S. companies. It invests in companies of all sizes, with increased exposure to smaller capitalization, lower relative price, and higher profitability companies as compared to their representation in the U.S. Universe. The Advisor generally defines the U.S. Universe as a market capitalization weighted set of U.S. operating companies listed on a securities exchange in the United States that is deemed appropriate by the Advisor.",
+    "expenseRatio": 0.15,
     "family": "Dimensional Fund Advisors",
-    "name": "Dimensional US Core Equity 1 ETF",
-    "return3Year": 21.26,
-    "totalAssets": 3505094656
+    "name": "DFA U.S. Core Equity 1 Portfolio \u2013 ETF Class Shares",
+    "return3Year": null,
+    "totalAssets": 42028703744
   },
   "DEGC": {
     "beta3Year": null,
@@ -837,7 +837,7 @@ const TICKER_DB = {
     "expenseRatio": 0.17,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional U.S. Core Equity 2 ETF",
-    "return3Year": 20.75,
+    "return3Year": 20.71,
     "totalAssets": 49144967168
   },
   "DFAE": {
@@ -847,7 +847,7 @@ const TICKER_DB = {
     "expenseRatio": 0.29,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional Emerging Core Equity Market ETF",
-    "return3Year": 23.24,
+    "return3Year": 23.28,
     "totalAssets": 10100025344
   },
   "DFAI": {
@@ -857,7 +857,7 @@ const TICKER_DB = {
     "expenseRatio": 0.18,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional International Core Equity Market ETF",
-    "return3Year": 19.87,
+    "return3Year": 19.9,
     "totalAssets": 18266365952
   },
   "DFAT": {
@@ -867,7 +867,7 @@ const TICKER_DB = {
     "expenseRatio": 0.28,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional U.S. Targeted Value ETF",
-    "return3Year": 15.86,
+    "return3Year": 15.31,
     "totalAssets": 14480879616
   },
   "DFAW": {
@@ -877,7 +877,7 @@ const TICKER_DB = {
     "expenseRatio": 0.24,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional World Equity ETF",
-    "return3Year": null,
+    "return3Year": 20.67,
     "totalAssets": 1673208576
   },
   "DFAX": {
@@ -887,7 +887,7 @@ const TICKER_DB = {
     "expenseRatio": 0.28,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional World ex U.S. Core Equity 2 ETF",
-    "return3Year": 21.58,
+    "return3Year": 21.57,
     "totalAssets": 12635161600
   },
   "DFEM": {
@@ -897,7 +897,7 @@ const TICKER_DB = {
     "expenseRatio": 0.39,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional Emerging Markets Core Equity 2 ETF",
-    "return3Year": 22.46,
+    "return3Year": 22.54,
     "totalAssets": 9624314880
   },
   "DFEV": {
@@ -907,7 +907,7 @@ const TICKER_DB = {
     "expenseRatio": 0.43,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional Emerging Markets Value ETF",
-    "return3Year": 24.92,
+    "return3Year": 25.07,
     "totalAssets": 2159668480
   },
   "DFFVX": {
@@ -937,7 +937,7 @@ const TICKER_DB = {
     "expenseRatio": 0.22,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional International Core Equity 2 ETF",
-    "return3Year": 20.7,
+    "return3Year": 20.64,
     "totalAssets": 15441369088
   },
   "DFIV": {
@@ -947,7 +947,7 @@ const TICKER_DB = {
     "expenseRatio": 0.27,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional International Value ETF",
-    "return3Year": 24.23,
+    "return3Year": 24.05,
     "totalAssets": 22113798144
   },
   "DFIVX": {
@@ -967,18 +967,18 @@ const TICKER_DB = {
     "expenseRatio": 0.58,
     "family": "WisdomTree",
     "name": "WisdomTree Japan SmallCap Dividend Fund",
-    "return3Year": 21.48,
+    "return3Year": 21.58,
     "totalAssets": 436281504
   },
   "DFSV": {
-    "beta3Year": 0.95,
+    "beta3Year": null,
     "category": "Small Value",
-    "description": "The Portfolio, using a market capitalization weighted approach, is designed to purchase a broad and diverse group of the readily marketable securities of U.S. small cap companies that the Advisor determines to be lower relative price stocks. A company\u2019s market capitalization is the number of its shares outstanding times its price per share. As a non-fundamental policy, under normal circumstances, the Portfolio will invest at least 80% of its net assets in securities of small cap U.S. companies.",
-    "expenseRatio": 0.3,
+    "description": "The fund normally will invest at least 80% of its net assets in securities of small cap U.S. companies. It may purchase or sell futures contracts and options on futures contracts for U.S. equity securities and indices, to increase or decrease equity market exposure based on actual or expected cash inflows to or outflows from the Portfolio.",
+    "expenseRatio": 0.31,
     "family": "Dimensional Fund Advisors",
-    "name": "Dimensional US Small Cap Value ETF",
-    "return3Year": 16.53,
-    "totalAssets": 8326099456
+    "name": "DFA U.S. Small Cap Value Portfolio \u2013 ETF Class Shares",
+    "return3Year": null,
+    "totalAssets": 19515037696
   },
   "DFSVX": {
     "beta3Year": 0.94,
@@ -1007,7 +1007,7 @@ const TICKER_DB = {
     "expenseRatio": 0.58,
     "family": "WisdomTree",
     "name": "WisdomTree Emerging Markets SmallCap Dividend Fund",
-    "return3Year": 14.59,
+    "return3Year": 14.86,
     "totalAssets": 1763734144
   },
   "DGSD": {
@@ -1017,7 +1017,7 @@ const TICKER_DB = {
     "expenseRatio": 0.54,
     "family": "WisdomTree Management Limited",
     "name": "WisdomTree Emerging Markets SmallCap Dividend UCITS ETF",
-    "return3Year": 13.35,
+    "return3Year": 13.33,
     "totalAssets": 44359564
   },
   "DIHP": {
@@ -1027,7 +1027,7 @@ const TICKER_DB = {
     "expenseRatio": 0.27,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional International High Profitability ETF",
-    "return3Year": 15.95,
+    "return3Year": 15.9,
     "totalAssets": 6580446208
   },
   "DISV": {
@@ -1037,7 +1037,7 @@ const TICKER_DB = {
     "expenseRatio": 0.42,
     "family": "Dimensional Fund Advisors",
     "name": "Dimensional International Small Cap Value ETF",
-    "return3Year": 25.7,
+    "return3Year": 25.71,
     "totalAssets": 5287469568
   },
   "DTLA": {
@@ -1047,17 +1047,17 @@ const TICKER_DB = {
     "expenseRatio": 0.07,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares $ Treasury Bond 20+yr UCITS ETF USD (Acc)",
-    "return3Year": 0.24,
+    "return3Year": 0.06,
     "totalAssets": null
   },
   "DUHP": {
-    "beta3Year": 0.9,
+    "beta3Year": null,
     "category": "Large Blend",
     "description": "The Portfolio is designed to purchase a broad and diverse group of readily marketable securities of large U.S. companies that the Advisor determines to have high profitability relative to other U.S. large cap companies at the time of purchase. An equity issuer is considered to have high profitability because it has high earnings or profitsfrom operations in relation to its book value or assets.",
-    "expenseRatio": 0.2,
+    "expenseRatio": 0.22,
     "family": "Dimensional Fund Advisors",
-    "name": "Dimensional US High Profitability ETF",
-    "return3Year": 19.07,
+    "name": "DFA U.S. High Relative Profitability Portfolio \u2013 ETF Class Shares",
+    "return3Year": null,
     "totalAssets": 12696741888
   },
   "DXIV": {
@@ -1071,14 +1071,14 @@ const TICKER_DB = {
     "totalAssets": 222354928
   },
   "DXUV": {
-    "beta3Year": 0.0,
+    "beta3Year": null,
     "category": "Mid-Cap Value",
-    "description": "To achieve the fund's investment objective, Dimensional Fund Advisors LP implements an integrated investment approach that combines research, portfolio design, portfolio management, and trading functions. Under normal circumstances, the fund will invest at least 80% of its net assets in equity securities of U.S. companies.",
-    "expenseRatio": 0.25,
+    "description": "The fund purchases a broad and diverse group of equity securities of U.S. operating companies. It invests in companies of all sizes, with increased exposure to smaller capitalization, lower relative price and higher profitability companies as compared to their representation in the U.S. Universe. The Advisor generally defines the U.S. Universe as a market capitalization weighted set of U.S. operating companies listed on a securities exchange in the United States that is deemed appropriate by the Advisor.",
+    "expenseRatio": 0.24,
     "family": "Dimensional Fund Advisors",
-    "name": "Dimensional US Vector Equity ETF",
+    "name": "DFA U.S. Vector Equity Portfolio \u2013 ETF Class Shares",
     "return3Year": null,
-    "totalAssets": 579391040
+    "totalAssets": 5628850688
   },
   "ECB": {
     "beta3Year": null,
@@ -1097,7 +1097,7 @@ const TICKER_DB = {
     "expenseRatio": 1.09,
     "family": "Direxion Funds",
     "name": "Direxion Daily MSCI Emerging Markets Bull 3X Shares",
-    "return3Year": 49.72,
+    "return3Year": 49.82,
     "totalAssets": 180649664
   },
   "EDV": {
@@ -1107,7 +1107,7 @@ const TICKER_DB = {
     "expenseRatio": 0.05,
     "family": "Vanguard",
     "name": "Vanguard Extended Duration Treasury Index Fund ETF Shares",
-    "return3Year": -2.38,
+    "return3Year": -2.81,
     "totalAssets": 4134654208
   },
   "EIMI": {
@@ -1137,7 +1137,7 @@ const TICKER_DB = {
     "expenseRatio": 0.26,
     "family": "iShares",
     "name": "iShares Emerging Markets Equity Factor ETF",
-    "return3Year": 25.62,
+    "return3Year": 25.65,
     "totalAssets": 1929151232
   },
   "EMXC": {
@@ -1147,7 +1147,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "iShares",
     "name": "iShares MSCI Emerging Markets ex China ETF",
-    "return3Year": 29.28,
+    "return3Year": 29.44,
     "totalAssets": 24918462464
   },
   "ESE": {
@@ -1167,7 +1167,7 @@ const TICKER_DB = {
     "expenseRatio": 0.32,
     "family": "Northern Trust",
     "name": "Northern Trust STOXX US ESG Select ETF",
-    "return3Year": 20.6,
+    "return3Year": 20.86,
     "totalAssets": 136476176
   },
   "EUNK": {
@@ -1217,7 +1217,7 @@ const TICKER_DB = {
     "expenseRatio": 1.04,
     "family": "Direxion Funds",
     "name": "Direxion Daily FTSE Europe Bull 3X Shares",
-    "return3Year": 38.5,
+    "return3Year": 38.18,
     "totalAssets": 50047988
   },
   "EWG": {
@@ -1227,7 +1227,7 @@ const TICKER_DB = {
     "expenseRatio": 0.49,
     "family": "iShares",
     "name": "iShares MSCI Germany ETF",
-    "return3Year": 19.3,
+    "return3Year": 19.32,
     "totalAssets": 1815145088
   },
   "EWJV": {
@@ -1237,7 +1237,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "iShares",
     "name": "iShares MSCI Japan Value ETF",
-    "return3Year": 23.82,
+    "return3Year": 24.03,
     "totalAssets": 767915904
   },
   "EXUS": {
@@ -1257,7 +1257,7 @@ const TICKER_DB = {
     "expenseRatio": 0.63,
     "family": "Cambria",
     "name": "Cambria Emerging Shareholder Yield ETF",
-    "return3Year": 23.83,
+    "return3Year": 23.92,
     "totalAssets": 928622976
   },
   "FBTC": {
@@ -1277,7 +1277,7 @@ const TICKER_DB = {
     "expenseRatio": 0.8,
     "family": "First Trust",
     "name": "First Trust Emerging Markets AlphaDEX Fund",
-    "return3Year": 19.18,
+    "return3Year": 18.94,
     "totalAssets": 812464064
   },
   "FEMS": {
@@ -1287,7 +1287,7 @@ const TICKER_DB = {
     "expenseRatio": 0.8,
     "family": "First Trust",
     "name": "First Trust Emerging Markets Small Cap AlphaDEX Fund",
-    "return3Year": 9.08,
+    "return3Year": 9.06,
     "totalAssets": 245606752
   },
   "FLKR": {
@@ -1297,7 +1297,7 @@ const TICKER_DB = {
     "expenseRatio": 0.09,
     "family": "Franklin Templeton, Inc",
     "name": "Franklin FTSE South Korea ETF",
-    "return3Year": 49.22,
+    "return3Year": 50.35,
     "totalAssets": 1698916224
   },
   "FLTR": {
@@ -1347,7 +1347,7 @@ const TICKER_DB = {
     "expenseRatio": 0.39,
     "family": "Schwab ETFs",
     "name": "Schwab Fundamental Emerging Markets Equity ETF",
-    "return3Year": 22.11,
+    "return3Year": 22.18,
     "totalAssets": 10305781760
   },
   "FOMO": {
@@ -1367,7 +1367,7 @@ const TICKER_DB = {
     "expenseRatio": 0.49,
     "family": "Life + Liberty Investments, LLC",
     "name": "Freedom 100 Emerging Markets ETF",
-    "return3Year": 39.18,
+    "return3Year": 39.03,
     "totalAssets": 3445719552
   },
   "FREM": {
@@ -1377,7 +1377,7 @@ const TICKER_DB = {
     "expenseRatio": 0.45,
     "family": "Franklin Templeton International Services S.\u00e0 r.l.",
     "name": "Franklin EM Multi-Factor Equity UCITS ETF",
-    "return3Year": 18.97,
+    "return3Year": 18.76,
     "totalAssets": 94628320
   },
   "FSKAX": {
@@ -1427,7 +1427,7 @@ const TICKER_DB = {
     "expenseRatio": 0.76,
     "family": "FT Portfolios Canada Co",
     "name": "First Trust Value Line Dividend ETF Common",
-    "return3Year": 8.15,
+    "return3Year": 8.08,
     "totalAssets": 7796646
   },
   "FXAIX": {
@@ -1447,7 +1447,7 @@ const TICKER_DB = {
     "expenseRatio": 0.59,
     "family": "Cambria",
     "name": "Cambria Foreign Shareholder Yield ETF",
-    "return3Year": 23.52,
+    "return3Year": 23.23,
     "totalAssets": 715100736
   },
   "FZILX": {
@@ -1477,7 +1477,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "WisdomTree",
     "name": "WisdomTree Efficient Gold Plus Equity Strategy Fund",
-    "return3Year": 46.57,
+    "return3Year": 47.01,
     "totalAssets": 481687232
   },
   "GLD": {
@@ -1487,7 +1487,7 @@ const TICKER_DB = {
     "expenseRatio": 0.4,
     "family": "State Street Investment Management",
     "name": "SPDR Gold Shares",
-    "return3Year": 30.33,
+    "return3Year": 30.71,
     "totalAssets": 152861196288
   },
   "GLDM": {
@@ -1497,7 +1497,7 @@ const TICKER_DB = {
     "expenseRatio": 0.1,
     "family": "State Street Investment Management",
     "name": "SPDR Gold MiniShares",
-    "return3Year": 30.71,
+    "return3Year": 31.12,
     "totalAssets": 32785807360
   },
   "GLTL": {
@@ -1507,7 +1507,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "State Street Global Advisors Europe Limited",
     "name": "State Street SPDR Bloomberg 15+ Year Gilt UCITS ETF",
-    "return3Year": -0.91,
+    "return3Year": -0.39,
     "totalAssets": 250848272
   },
   "GOOG": {
@@ -1527,7 +1527,7 @@ const TICKER_DB = {
     "expenseRatio": 0.1,
     "family": "iShares",
     "name": "iShares 25+ Year Treasury STRIPS Bond ETF",
-    "return3Year": -4.33,
+    "return3Year": -4.94,
     "totalAssets": 326855744
   },
   "GVAL": {
@@ -1537,7 +1537,7 @@ const TICKER_DB = {
     "expenseRatio": 0.68,
     "family": "Cambria",
     "name": "Cambria Global Value ETF",
-    "return3Year": 30.9,
+    "return3Year": 30.52,
     "totalAssets": 591078208
   },
   "HFGM": {
@@ -1557,7 +1557,7 @@ const TICKER_DB = {
     "expenseRatio": 0.29,
     "family": "Alpha Architect",
     "name": "Alpha Architect High Inflation And Deflation ETF",
-    "return3Year": 4.68,
+    "return3Year": 4.48,
     "totalAssets": 137953632
   },
   "HIGH": {
@@ -1567,7 +1567,7 @@ const TICKER_DB = {
     "expenseRatio": 0.5,
     "family": "Simplify Asset Management",
     "name": "Simplify Enhanced Income ETF",
-    "return3Year": 2.16,
+    "return3Year": 2.04,
     "totalAssets": 64036196
   },
   "HYSA": {
@@ -1576,8 +1576,8 @@ const TICKER_DB = {
     "description": "The fund is \u201cactively managed\u201d and does not seek to replicate the performance of a specified index. It operates as a \u201cfund of funds,\u201d meaning that it primarily invests its assets in securities of other ETFs. The fund is non-diversified.",
     "expenseRatio": 0.55,
     "family": "BondBloxx Investment Management",
-    "name": "BondBloxx High Yield Income ETF",
-    "return3Year": 7.38,
+    "name": "Bondbloxx USD High Yield Bond Sector Rotation ETF",
+    "return3Year": 7.31,
     "totalAssets": 71170944
   },
   "IAUM": {
@@ -1587,7 +1587,7 @@ const TICKER_DB = {
     "expenseRatio": 0.09,
     "family": "iShares",
     "name": "iShares Gold Trust Micro",
-    "return3Year": 30.77,
+    "return3Year": 31.15,
     "totalAssets": 8144430592
   },
   "IBC0": {
@@ -1597,7 +1597,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares STOXX Europe Equity Multifactor UCITS ETF EUR (Acc)",
-    "return3Year": 19.4,
+    "return3Year": 19.03,
     "totalAssets": 901518272
   },
   "IBCI": {
@@ -1637,7 +1637,7 @@ const TICKER_DB = {
     "expenseRatio": 0.04,
     "family": "iShares",
     "name": "iShares Core MSCI International Developed Markets ETF",
-    "return3Year": 19.29,
+    "return3Year": 19.35,
     "totalAssets": 32681279488
   },
   "IDMO": {
@@ -1647,7 +1647,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "Invesco",
     "name": "Invesco S&P International Developed Momentum ETF",
-    "return3Year": 26.02,
+    "return3Year": 26.22,
     "totalAssets": 4293141248
   },
   "IEF": {
@@ -1657,7 +1657,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "iShares",
     "name": "iShares 7-10 Year Treasury Bond ETF",
-    "return3Year": 3.09,
+    "return3Year": 2.94,
     "totalAssets": 41824055296
   },
   "IEFA": {
@@ -1687,7 +1687,7 @@ const TICKER_DB = {
     "expenseRatio": 0.09,
     "family": "iShares",
     "name": "iShares Core MSCI Emerging Markets ETF",
-    "return3Year": 23.35,
+    "return3Year": 23.4,
     "totalAssets": 160899022848
   },
   "IEMO": {
@@ -1707,7 +1707,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares Global Govt Bond UCITS ETF USD (Acc)",
-    "return3Year": 1.87,
+    "return3Year": 1.93,
     "totalAssets": null
   },
   "II": {
@@ -1757,7 +1757,7 @@ const TICKER_DB = {
     "expenseRatio": 0.38,
     "family": "Alpha Architect",
     "name": "Alpha Architect International Quantitative Momentum ETF",
-    "return3Year": 22.3,
+    "return3Year": 22.09,
     "totalAssets": 158427296
   },
   "IMTM": {
@@ -1767,7 +1767,7 @@ const TICKER_DB = {
     "expenseRatio": 0.3,
     "family": "iShares",
     "name": "iShares MSCI Intl Momentum Factor ETF",
-    "return3Year": 22.77,
+    "return3Year": 22.81,
     "totalAssets": 4255099392
   },
   "INDEX": {
@@ -1787,7 +1787,7 @@ const TICKER_DB = {
     "expenseRatio": 0.84,
     "family": "Main Management ETFs",
     "name": "Main International ETF",
-    "return3Year": 18.24,
+    "return3Year": 18.29,
     "totalAssets": 246289520
   },
   "IQEA": {
@@ -1847,7 +1847,7 @@ const TICKER_DB = {
     "expenseRatio": 0.24,
     "family": "iShares",
     "name": "iShares International Small-Cap Equity Factor ETF",
-    "return3Year": 19.76,
+    "return3Year": 19.55,
     "totalAssets": 684414080
   },
   "ITOT": {
@@ -1857,7 +1857,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "iShares",
     "name": "iShares Core S&P Total U.S. Stock Market ETF",
-    "return3Year": 22.46,
+    "return3Year": 22.44,
     "totalAssets": 97117683712
   },
   "IUSQ": {
@@ -1877,7 +1877,7 @@ const TICKER_DB = {
     "expenseRatio": 0.38,
     "family": "Alpha Architect",
     "name": "Alpha Architect International Quantitative Value ETF",
-    "return3Year": 18.98,
+    "return3Year": 18.96,
     "totalAssets": 226989696
   },
   "IWDA": {
@@ -1887,7 +1887,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares Core MSCI World UCITS ETF USD (Acc)",
-    "return3Year": 21.45,
+    "return3Year": 21.3,
     "totalAssets": null
   },
   "IWDS": {
@@ -1937,7 +1937,7 @@ const TICKER_DB = {
     "expenseRatio": 0.35,
     "family": "JPMorgan",
     "name": "JPMorgan Equity Premium Income ETF",
-    "return3Year": 9.89,
+    "return3Year": 10.21,
     "totalAssets": 46155608064
   },
   "JOGS": {
@@ -1987,7 +1987,7 @@ const TICKER_DB = {
     "expenseRatio": 0.9,
     "family": "KraneShares",
     "name": "KraneShares Mount Lucas Managed Futures Index Strategy ETF",
-    "return3Year": 0.32,
+    "return3Year": 0.25,
     "totalAssets": 412587648
   },
   "LCG": {
@@ -2057,7 +2057,7 @@ const TICKER_DB = {
     "expenseRatio": 0.45,
     "family": "American Century Investments",
     "name": "American Century Mid Cap Growth Impact ETF",
-    "return3Year": 16.77,
+    "return3Year": 16.2,
     "totalAssets": 104779104
   },
   "MOM": {
@@ -2117,7 +2117,7 @@ const TICKER_DB = {
     "expenseRatio": 0.26,
     "family": "WisdomTree",
     "name": "WisdomTree International Efficient Core Fund",
-    "return3Year": 16.41,
+    "return3Year": 16.36,
     "totalAssets": 500835328
   },
   "NTSX": {
@@ -2127,7 +2127,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "WisdomTree",
     "name": "WisdomTree U.S. Efficient Core Fund",
-    "return3Year": 20.32,
+    "return3Year": 20.2,
     "totalAssets": 1392359040
   },
   "NTSZ": {
@@ -2147,7 +2147,7 @@ const TICKER_DB = {
     "expenseRatio": 0.59,
     "family": "Invesco",
     "name": "Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF",
-    "return3Year": 13.56,
+    "return3Year": 13.01,
     "totalAssets": 7286278144
   },
   "PQTIX": {
@@ -2167,7 +2167,7 @@ const TICKER_DB = {
     "expenseRatio": 0.05,
     "family": "Amundi Luxembourg S.A.",
     "name": "Amundi Index Solutions - Amundi Prime Euro Government Bond UCITS ETF Acc",
-    "return3Year": 1.89,
+    "return3Year": 1.96,
     "totalAssets": 1814687104
   },
   "PRAZ": {
@@ -2177,7 +2177,7 @@ const TICKER_DB = {
     "expenseRatio": 0.05,
     "family": "Amundi Luxembourg S.A.",
     "name": "Amundi Index Solutions - Amundi Prime Eurozone UCITS ETF DR (C)",
-    "return3Year": 18.36,
+    "return3Year": 18.47,
     "totalAssets": null
   },
   "PSRU": {
@@ -2297,7 +2297,7 @@ const TICKER_DB = {
     "expenseRatio": 0.28,
     "family": "Alpha Architect",
     "name": "Alpha Architect U.S. Quantitative Momentum ETF",
-    "return3Year": 20.81,
+    "return3Year": 20.23,
     "totalAssets": 424941248
   },
   "QNZIX": {
@@ -2347,7 +2347,7 @@ const TICKER_DB = {
     "expenseRatio": 0.28,
     "family": "Alpha Architect",
     "name": "Alpha Architect U.S. Quantitative Value ETF",
-    "return3Year": 18.8,
+    "return3Year": 18.21,
     "totalAssets": 626542400
   },
   "RAUS": {
@@ -2407,7 +2407,7 @@ const TICKER_DB = {
     "expenseRatio": 0.35,
     "family": "Invesco",
     "name": "Invesco S&P 500 Pure Value ETF",
-    "return3Year": 19.18,
+    "return3Year": 19.08,
     "totalAssets": 1745268608
   },
   "RQP": {
@@ -2417,7 +2417,7 @@ const TICKER_DB = {
     "expenseRatio": 0.22,
     "family": "RBC Global Asset Management Inc.",
     "name": "RBC Target 2027 Canadian Corporate Bond Index ETF",
-    "return3Year": 6.09,
+    "return3Year": 5.98,
     "totalAssets": 844514432
   },
   "RQR": {
@@ -2427,7 +2427,7 @@ const TICKER_DB = {
     "expenseRatio": 0.22,
     "family": "RBC Global Asset Management Inc.",
     "name": "RBC Target 2029 Canadian Corporate Bond ETF",
-    "return3Year": 6.51,
+    "return3Year": 6.43,
     "totalAssets": 540592576
   },
   "RQS": {
@@ -2467,7 +2467,7 @@ const TICKER_DB = {
     "expenseRatio": 1.01,
     "family": "Return stacked ETFs",
     "name": "Return Stacked Bonds & Managed Futures ETF",
-    "return3Year": 4.99,
+    "return3Year": 4.48,
     "totalAssets": 152567504
   },
   "RSBY": {
@@ -2497,7 +2497,7 @@ const TICKER_DB = {
     "expenseRatio": 0.99,
     "family": "Return stacked ETFs",
     "name": "Return Stacked U.S. Stocks & Managed Futures ETF",
-    "return3Year": 22.74,
+    "return3Year": 22.62,
     "totalAssets": 528934752
   },
   "RSSX": {
@@ -2527,7 +2527,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Schwab ETFs",
     "name": "Schwab U.S. TIPS ETF",
-    "return3Year": 3.84,
+    "return3Year": 3.73,
     "totalAssets": 16080980992
   },
   "SGOV": {
@@ -2537,7 +2537,7 @@ const TICKER_DB = {
     "expenseRatio": 0.09,
     "family": "iShares",
     "name": "iShares 0-3 Month Treasury Bond ETF",
-    "return3Year": 4.55,
+    "return3Year": 4.53,
     "totalAssets": 105976479744
   },
   "SMB": {
@@ -2547,7 +2547,7 @@ const TICKER_DB = {
     "expenseRatio": 0.07,
     "family": "VanEck",
     "name": "VanEck Short Muni ETF",
-    "return3Year": 3.12,
+    "return3Year": 2.86,
     "totalAssets": 317981600
   },
   "SPIA": {
@@ -2577,7 +2577,7 @@ const TICKER_DB = {
     "expenseRatio": 0.6,
     "family": "Direxion Funds",
     "name": "Direxion Daily S&P 500 Bull 2X Shares",
-    "return3Year": 39.23,
+    "return3Year": 39.52,
     "totalAssets": 288217632
   },
   "SPY": {
@@ -2587,7 +2587,7 @@ const TICKER_DB = {
     "expenseRatio": 0.0945,
     "family": "State Street Investment Management",
     "name": "State Street SPDR S&P 500 ETF Trust",
-    "return3Year": 22.77,
+    "return3Year": 22.84,
     "totalAssets": 811937038336
   },
   "SPYI": {
@@ -2597,7 +2597,7 @@ const TICKER_DB = {
     "expenseRatio": 0.68,
     "family": "Neos Funds",
     "name": "Neos S&P 500(R) High Income ETF",
-    "return3Year": 17.6,
+    "return3Year": 17.72,
     "totalAssets": 11710310400
   },
   "SSGLX": {
@@ -2617,7 +2617,7 @@ const TICKER_DB = {
     "expenseRatio": 0.07,
     "family": "iShares",
     "name": "iShares Short-Term National Muni Bond ETF",
-    "return3Year": 2.75,
+    "return3Year": 2.74,
     "totalAssets": 11636402176
   },
   "SVIX": {
@@ -2627,7 +2627,7 @@ const TICKER_DB = {
     "expenseRatio": 3.93,
     "family": "VS TRUST",
     "name": "-1x Short VIX Futures ETF",
-    "return3Year": 0.57,
+    "return3Year": 1.31,
     "totalAssets": 149144144
   },
   "SWRD": {
@@ -2667,7 +2667,7 @@ const TICKER_DB = {
     "expenseRatio": 0.59,
     "family": "Cambria",
     "name": "Cambria Shareholder Yield ETF",
-    "return3Year": 12.32,
+    "return3Year": 11.7,
     "totalAssets": 1018820160
   },
   "TAIL": {
@@ -2677,7 +2677,7 @@ const TICKER_DB = {
     "expenseRatio": 0.6,
     "family": "Cambria",
     "name": "Cambria Tail Risk ETF",
-    "return3Year": -5.98,
+    "return3Year": -6.07,
     "totalAssets": 149126592
   },
   "TAT": {
@@ -2687,7 +2687,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "VanEck Asset Management B.V.",
     "name": "VanEck iBoxx EUR Sovereign Capped AAA-AA 1-5 UCITS ETF",
-    "return3Year": 1.89,
+    "return3Year": 1.87,
     "totalAssets": 50437424
   },
   "TCIEX": {
@@ -2707,7 +2707,7 @@ const TICKER_DB = {
     "expenseRatio": 0.18,
     "family": "Northern Trust",
     "name": "Northern Trust iBoxx 5-Year Target Duration TIPS ETF",
-    "return3Year": 4.31,
+    "return3Year": 4.22,
     "totalAssets": 1045424768
   },
   "TEQLX": {
@@ -2757,7 +2757,7 @@ const TICKER_DB = {
     "expenseRatio": 0.9,
     "family": "Direxion Funds",
     "name": "Direxion Daily 20+ Year Treasury Bull 3X Shares",
-    "return3Year": -14.94,
+    "return3Year": -15.52,
     "totalAssets": 2191778304
   },
   "TOPIX": {
@@ -2774,10 +2774,10 @@ const TICKER_DB = {
     "beta3Year": 4.04,
     "category": "Trading--Leveraged Equity",
     "description": "The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the Daily Target. The index is designed to measure the performance of 100 of the largest Nasdaq-listed non-financial companies. Under normal circumstances, the fund will obtain leveraged exposure to at least 80% of its total assets in components of the index or in instruments with similar economic characteristics. The fund is non-diversified.",
-    "expenseRatio": 0.82,
+    "expenseRatio": 0.78,
     "family": "ProShares",
     "name": "ProShares UltraPro QQQ",
-    "return3Year": 65.78,
+    "return3Year": 65.02,
     "totalAssets": 36114247680
   },
   "UEQC": {
@@ -2797,7 +2797,7 @@ const TICKER_DB = {
     "expenseRatio": 0.34,
     "family": "UBS Asset Management (Europe) S.A.",
     "name": "UBS CMCI Commodity Carry SF UCITS ETF hEUR acc",
-    "return3Year": -3.19,
+    "return3Year": -2.31,
     "totalAssets": null
   },
   "UGL": {
@@ -2807,7 +2807,7 @@ const TICKER_DB = {
     "expenseRatio": 1.19,
     "family": "ProShares",
     "name": "ProShares Ultra Gold",
-    "return3Year": 51.05,
+    "return3Year": 52.03,
     "totalAssets": 894209216
   },
   "UIQN": {
@@ -2834,10 +2834,10 @@ const TICKER_DB = {
     "beta3Year": 3.11,
     "category": "Trading--Leveraged Equity",
     "description": "The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the Daily Target. The index is designed to measure the performance of 500 of the largest companies listed and domiciled in the U.S. Under normal circumstances, the fund will obtain leveraged exposure to at least 80% of its total assets in components of the index or in instruments with similar economic characteristics. The fund is non-diversified.",
-    "expenseRatio": 0.89,
+    "expenseRatio": 0.88,
     "family": "ProShares",
     "name": "ProShares UltraPro S&P500",
-    "return3Year": 54.2,
+    "return3Year": 54.63,
     "totalAssets": 5447582720
   },
   "URTH": {
@@ -2847,17 +2847,17 @@ const TICKER_DB = {
     "expenseRatio": 0.24,
     "family": "iShares",
     "name": "iShares MSCI World ETF",
-    "return3Year": 21.64,
+    "return3Year": 21.65,
     "totalAssets": 8218298880
   },
   "USD": {
     "beta3Year": 4.44,
     "category": "Trading--Leveraged Equity",
     "description": "The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the Daily Target. The index is designed to measure the stock performance of U.S. companies in the semiconductors sub-sector. Under normal circumstances, the fund will obtain leveraged exposure to at least 80% of its total assets in components of the index or in instruments with similar economic characteristics. The fund is non-diversified.",
-    "expenseRatio": 0.95,
+    "expenseRatio": 0.94,
     "family": "ProShares",
     "name": "ProShares Ultra Semiconductors",
-    "return3Year": 118.18,
+    "return3Year": 115.68,
     "totalAssets": 2668661248
   },
   "VAB": {
@@ -2867,7 +2867,7 @@ const TICKER_DB = {
     "expenseRatio": 0.09,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard Canadian Aggregate Bond Index ETF",
-    "return3Year": 4.76,
+    "return3Year": 4.53,
     "totalAssets": 7620145664
   },
   "VAGE": {
@@ -2877,7 +2877,7 @@ const TICKER_DB = {
     "expenseRatio": null,
     "family": "Vanguard Group (Ireland) Limited",
     "name": "Vanguard Global Aggregate Bond UCITS ETF EUR Hedged Income",
-    "return3Year": 2.02,
+    "return3Year": 2.05,
     "totalAssets": null
   },
   "VBIL": {
@@ -2907,7 +2907,7 @@ const TICKER_DB = {
     "expenseRatio": 0.06,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard FTSE Canada All Cap Index ETF",
-    "return3Year": 25.13,
+    "return3Year": 25.2,
     "totalAssets": 17754396672
   },
   "VDET": {
@@ -2937,7 +2937,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
-    "return3Year": 21.1,
+    "return3Year": 21.19,
     "totalAssets": 323821109248
   },
   "VEMIX": {
@@ -2957,7 +2957,7 @@ const TICKER_DB = {
     "expenseRatio": 0.22,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard All-Equity ETF Portfolio",
-    "return3Year": 23.77,
+    "return3Year": 23.62,
     "totalAssets": 17017082880
   },
   "VERE": {
@@ -2977,7 +2977,7 @@ const TICKER_DB = {
     "expenseRatio": 0.18,
     "family": "Vanguard",
     "name": "Vanguard U.S. Multifactor ETF Shares",
-    "return3Year": 22.66,
+    "return3Year": 22.17,
     "totalAssets": 976162112
   },
   "VFMO": {
@@ -2987,7 +2987,7 @@ const TICKER_DB = {
     "expenseRatio": 0.13,
     "family": "Vanguard",
     "name": "Vanguard U.S. Momentum Factor ETF ETF Shares",
-    "return3Year": 27.46,
+    "return3Year": 27.17,
     "totalAssets": 1918741504
   },
   "VFORX": {
@@ -3017,7 +3017,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Intermediate-Term Treasury Index Fund ETF Shares",
-    "return3Year": 3.64,
+    "return3Year": 3.49,
     "totalAssets": 48410165248
   },
   "VGLT": {
@@ -3027,7 +3027,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Long-Term Treasury Index Fund ETF Shares",
-    "return3Year": 1.27,
+    "return3Year": 1.05,
     "totalAssets": 15133907968
   },
   "VGRO": {
@@ -3037,7 +3037,7 @@ const TICKER_DB = {
     "expenseRatio": 0.22,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard Growth ETF Portfolio",
-    "return3Year": 19.65,
+    "return3Year": 19.58,
     "totalAssets": 10835021824
   },
   "VGSH": {
@@ -3047,7 +3047,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Short-Term Treasury Index Fund ETF Shares",
-    "return3Year": 4.09,
+    "return3Year": 4.03,
     "totalAssets": 39195672576
   },
   "VGSNX": {
@@ -3127,7 +3127,7 @@ const TICKER_DB = {
     "expenseRatio": 0.38,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard Global Momentum Factor ETF CAD",
-    "return3Year": 30.78,
+    "return3Year": 30.14,
     "totalAssets": 481490848
   },
   "VMOT": {
@@ -3147,7 +3147,7 @@ const TICKER_DB = {
     "expenseRatio": 0.13,
     "family": "Vanguard",
     "name": "Vanguard Real Estate Index Fund ETF Shares",
-    "return3Year": 10.14,
+    "return3Year": 10.42,
     "totalAssets": 70822862848
   },
   "VNQI": {
@@ -3157,7 +3157,7 @@ const TICKER_DB = {
     "expenseRatio": 0.12,
     "family": "Vanguard",
     "name": "Vanguard Global ex-U.S. Real Estate Index Fund ETF Shares",
-    "return3Year": 7.73,
+    "return3Year": 7.84,
     "totalAssets": 3759717376
   },
   "VOE": {
@@ -3167,7 +3167,7 @@ const TICKER_DB = {
     "expenseRatio": 0.05,
     "family": "Vanguard",
     "name": "Vanguard Morningstar Mid-Cap Value ETF",
-    "return3Year": 16.95,
+    "return3Year": 17.15,
     "totalAssets": 38957596672
   },
   "VONE": {
@@ -3177,7 +3177,7 @@ const TICKER_DB = {
     "expenseRatio": 0.06,
     "family": "Vanguard",
     "name": "Vanguard Russell 1000 Index Fund ETF Shares",
-    "return3Year": 22.51,
+    "return3Year": 22.48,
     "totalAssets": 11914196992
   },
   "VOO": {
@@ -3187,7 +3187,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard S&P 500 ETF",
-    "return3Year": 22.86,
+    "return3Year": 22.94,
     "totalAssets": 1756880437248
   },
   "VSMPX": {
@@ -3217,7 +3217,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Morningstar Total Stock Market ETF",
-    "return3Year": 22.43,
+    "return3Year": 22.44,
     "totalAssets": 2343736705024
   },
   "VTIP": {
@@ -3227,7 +3227,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Short-Term Inflation-Protected Securities Index Fund ETF Shares",
-    "return3Year": 4.79,
+    "return3Year": 4.73,
     "totalAssets": 73167478784
   },
   "VTV": {
@@ -3237,7 +3237,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Morningstar Value ETF",
-    "return3Year": 18.82,
+    "return3Year": 19.1,
     "totalAssets": 262299090944
   },
   "VUG": {
@@ -3247,7 +3247,7 @@ const TICKER_DB = {
     "expenseRatio": 0.03,
     "family": "Vanguard",
     "name": "Vanguard Morningstar Growth ETF",
-    "return3Year": 26.37,
+    "return3Year": 26.22,
     "totalAssets": 384533856256
   },
   "VUN": {
@@ -3257,7 +3257,7 @@ const TICKER_DB = {
     "expenseRatio": 0.17,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard Morningstar U.S. Total Market Index ETF",
-    "return3Year": 24.12,
+    "return3Year": 23.78,
     "totalAssets": 19673499648
   },
   "VVL": {
@@ -3267,7 +3267,7 @@ const TICKER_DB = {
     "expenseRatio": 0.38,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard Global Value Factor ETF CAD",
-    "return3Year": 23.13,
+    "return3Year": 22.27,
     "totalAssets": 896598720
   },
   "VWCE": {
@@ -3297,7 +3297,7 @@ const TICKER_DB = {
     "expenseRatio": 0.06,
     "family": "Vanguard",
     "name": "Vanguard FTSE Emerging Markets Index Fund ETF Shares",
-    "return3Year": 18.33,
+    "return3Year": 18.26,
     "totalAssets": 168359133184
   },
   "VWRA": {
@@ -3327,7 +3327,7 @@ const TICKER_DB = {
     "expenseRatio": 0.22,
     "family": "Vanguard Investments Canada Inc",
     "name": "Vanguard FTSE Global All Cap ex Canada Index ETF",
-    "return3Year": 23.16,
+    "return3Year": 22.96,
     "totalAssets": 3625125376
   },
   "VXF": {
@@ -3337,7 +3337,7 @@ const TICKER_DB = {
     "expenseRatio": 0.05,
     "family": "Vanguard",
     "name": "Vanguard Extended Market Index Fund ETF Shares",
-    "return3Year": 19.51,
+    "return3Year": 18.88,
     "totalAssets": 95329148928
   },
   "VXUS": {
@@ -3347,7 +3347,7 @@ const TICKER_DB = {
     "expenseRatio": 0.05,
     "family": "Vanguard",
     "name": "Vanguard Total International Stock Index Fund ETF Shares",
-    "return3Year": 20.38,
+    "return3Year": 20.41,
     "totalAssets": 665693061120
   },
   "WEBN": {
@@ -3371,14 +3371,14 @@ const TICKER_DB = {
     "totalAssets": null
   },
   "WORLD": {
-    "beta3Year": 0.0,
+    "beta3Year": null,
     "category": "ETF",
     "description": "",
     "expenseRatio": 0.09,
-    "family": "UBS Asset Management (Europe) S.A.",
-    "name": "UBS Core MSCI World UCITS ETF hCHF acc",
+    "family": "Franklin Templeton International Services S.\u00e0 r.l.",
+    "name": "Franklin FTSE Developed World UCITS ETF USD Accumulation",
     "return3Year": null,
-    "totalAssets": null
+    "totalAssets": 22376008
   },
   "WPEA": {
     "beta3Year": 0.0,
@@ -3397,14 +3397,14 @@ const TICKER_DB = {
     "expenseRatio": 0.35,
     "family": "BlackRock Asset Management Ireland - ETF",
     "name": "iShares MSCI World Small Cap UCITS ETF USD (Acc)",
-    "return3Year": 17.11,
+    "return3Year": 17.48,
     "totalAssets": 8986007552
   },
   "WTED": {
     "beta3Year": null,
     "category": "Emerging Markets",
     "description": "",
-    "expenseRatio": null,
+    "expenseRatio": 0.54,
     "family": "WisdomTree Management Limited",
     "name": "WisdomTree Emerging Markets SmallCap Dividend UCITS ETF",
     "return3Year": null,
@@ -3414,10 +3414,10 @@ const TICKER_DB = {
     "beta3Year": 0.97,
     "category": "Developed Markets",
     "description": "",
-    "expenseRatio": null,
+    "expenseRatio": 0.22,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core MSCI All Country World ex Canada Index ETF",
-    "return3Year": 21.19,
+    "return3Year": 22.8,
     "totalAssets": null
   },
   "XD9U": {
@@ -3437,11 +3437,11 @@ const TICKER_DB = {
     "expenseRatio": 0.39,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers Bloomberg Commodity ex-Agriculture & Livestock Swap UCITS ETF 1C EUR Hedged",
-    "return3Year": 14.42,
+    "return3Year": 13.87,
     "totalAssets": null
   },
   "XDEB": {
-    "beta3Year": null,
+    "beta3Year": 0.43,
     "category": "Developed Markets",
     "description": "",
     "expenseRatio": 0.25,
@@ -3467,7 +3467,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers MSCI World Quality UCITS ETF 1C",
-    "return3Year": 17.72,
+    "return3Year": 19.13,
     "totalAssets": 3105635328
   },
   "XDEV": {
@@ -3477,27 +3477,27 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers MSCI World Value UCITS ETF 1C",
-    "return3Year": 28.77,
+    "return3Year": 29.02,
     "totalAssets": 4531093504
   },
   "XEC": {
     "beta3Year": 0.99,
     "category": "Emerging Markets",
     "description": "",
-    "expenseRatio": null,
+    "expenseRatio": 0.28,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core MSCI Emerging Markets IMI Index ETF",
-    "return3Year": 23.25,
+    "return3Year": 24.84,
     "totalAssets": null
   },
   "XEF": {
     "beta3Year": 1.0,
     "category": "Developed Markets",
     "description": "",
-    "expenseRatio": null,
+    "expenseRatio": 0.23,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core MSCI EAFE IMI Index ETF",
-    "return3Year": 18.98,
+    "return3Year": 20.18,
     "totalAssets": 23859922944
   },
   "XEON": {
@@ -3511,14 +3511,14 @@ const TICKER_DB = {
     "totalAssets": 23844069376
   },
   "XEQT": {
-    "beta3Year": 0.9,
+    "beta3Year": 0.89,
     "category": "Blend",
     "description": "",
-    "expenseRatio": null,
+    "expenseRatio": 0.2,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core Equity ETF Portfolio",
-    "return3Year": 22.44,
-    "totalAssets": 20799010816
+    "return3Year": 23.47,
+    "totalAssets": 22072700928
   },
   "XGDU": {
     "beta3Year": null,
@@ -3528,17 +3528,17 @@ const TICKER_DB = {
     "family": "Xtrackers ETC plc",
     "name": "Xtrackers IE Physical Gold ETC",
     "return3Year": null,
-    "totalAssets": 6058275328
+    "totalAssets": 7021965312
   },
   "XIC": {
     "beta3Year": 1.0,
     "category": "Large Cap",
     "description": "",
-    "expenseRatio": null,
+    "expenseRatio": 0.06,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core S&P/TSX Capped Composite Index ETF",
-    "return3Year": 25.57,
-    "totalAssets": 31788046336
+    "return3Year": 25.22,
+    "totalAssets": 34336313344
   },
   "XIU": {
     "beta3Year": 0.96,
