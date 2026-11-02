@@ -836,7 +836,7 @@ const TICKER_DB = {
     "description": "The fund purchases a broad and diverse group of equity securities of U.S. companies. It invests in companies of all sizes, with increased exposure to smaller capitalization, lower relative price and higher profitability companies as compared to their representation in the U.S. Universe. The Advisor generally defines the U.S. Universe as a market capitalization weighted set of U.S. operating companies listed on a securities exchange in the United States that is deemed appropriate by the Advisor.",
     "expenseRatio": 0.18,
     "family": "Dimensional Fund Advisors",
-    "name": "U.S. Core Equity 2 Portfolio-ETF Class Shares",
+    "name": "DFA U.S. Core Equity 2 Portfolio-ETF Class Shares",
     "return3Year": 21.0,
     "totalAssets": 38353334272
   },
@@ -866,7 +866,7 @@ const TICKER_DB = {
     "description": "The fund purchases a broad and diverse group of the readily marketable securities of U.S. small and mid cap companies that the advisor determines to be value stocks with higher profitability. It may purchase or sell futures contracts and options on futures contracts for U.S. equity securities and indices, to increase or decrease equity market exposure based on actual or expected cash inflows to or outflows from the fund.",
     "expenseRatio": 0.29,
     "family": "Dimensional Fund Advisors",
-    "name": "U.S. Targeted Value Portfolio-ETF Class Shares",
+    "name": "DFA U.S. Targeted Value Portfolio-ETF Class Shares",
     "return3Year": 17.44,
     "totalAssets": 16001360896
   },
@@ -3437,7 +3437,7 @@ const TICKER_DB = {
     "expenseRatio": 0.39,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers Bloomberg Commodity ex-Agriculture & Livestock Swap UCITS ETF 1C EUR Hedged",
-    "return3Year": 14.4,
+    "return3Year": 13.87,
     "totalAssets": null
   },
   "XDEB": {
@@ -3467,7 +3467,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers MSCI World Quality UCITS ETF 1C",
-    "return3Year": 19.79,
+    "return3Year": 20.47,
     "totalAssets": 2835868928
   },
   "XDEV": {
@@ -3477,7 +3477,7 @@ const TICKER_DB = {
     "expenseRatio": 0.25,
     "family": "DWS Investment S.A. (ETF)",
     "name": "Xtrackers MSCI World Value UCITS ETF 1C",
-    "return3Year": 29.87,
+    "return3Year": 30.04,
     "totalAssets": 4517690368
   },
   "XEC": {
@@ -3487,7 +3487,7 @@ const TICKER_DB = {
     "expenseRatio": 0.28,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core MSCI Emerging Markets IMI Index ETF",
-    "return3Year": 21.94,
+    "return3Year": 20.85,
     "totalAssets": null
   },
   "XEF": {
@@ -3497,7 +3497,7 @@ const TICKER_DB = {
     "expenseRatio": 0.23,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core MSCI EAFE IMI Index ETF",
-    "return3Year": 20.09,
+    "return3Year": 19.62,
     "totalAssets": 24329615360
   },
   "XEON": {
@@ -3517,7 +3517,7 @@ const TICKER_DB = {
     "expenseRatio": 0.2,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core Equity ETF Portfolio",
-    "return3Year": 23.58,
+    "return3Year": 23.17,
     "totalAssets": 22910253056
   },
   "XGDU": {
@@ -3537,7 +3537,7 @@ const TICKER_DB = {
     "expenseRatio": 0.06,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core S&P/TSX Capped Composite Index ETF",
-    "return3Year": 26.68,
+    "return3Year": 26.83,
     "totalAssets": 35022647296
   },
   "XIU": {
@@ -3547,7 +3547,7 @@ const TICKER_DB = {
     "expenseRatio": 0.18,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares S&P/TSX 60 Index ETF",
-    "return3Year": 26.34,
+    "return3Year": 26.65,
     "totalAssets": 22559236096
   },
   "XNAS": {
@@ -3567,7 +3567,7 @@ const TICKER_DB = {
     "expenseRatio": 0.07,
     "family": "BlackRock Asset Management Canada Ltd",
     "name": "iShares Core S&P U.S. Total Market Index ETF",
-    "return3Year": 23.58,
+    "return3Year": 23.04,
     "totalAssets": null
   },
   "ZAG": {
@@ -3577,7 +3577,7 @@ const TICKER_DB = {
     "expenseRatio": 0.09,
     "family": "BMO Asset Management Inc",
     "name": "BMO Aggregate Bond Index ETF",
-    "return3Year": 4.95,
+    "return3Year": 5.05,
     "totalAssets": 12920692736
   },
   "ZCN": {
@@ -3587,7 +3587,7 @@ const TICKER_DB = {
     "expenseRatio": 0.06,
     "family": "BMO Asset Management Inc",
     "name": "BMO S&P/TSX Capped Composite Index ETF",
-    "return3Year": 26.71,
+    "return3Year": 26.84,
     "totalAssets": 18067861504
   },
   "ZCS": {
@@ -3597,7 +3597,7 @@ const TICKER_DB = {
     "expenseRatio": 0.11,
     "family": "BMO Asset Management Inc",
     "name": "BMO Short Corporate Bond Index ETF",
-    "return3Year": 5.85,
+    "return3Year": 5.81,
     "totalAssets": 4664556544
   },
   "ZFS": {
@@ -3607,7 +3607,7 @@ const TICKER_DB = {
     "expenseRatio": 0.23,
     "family": "BMO Asset Management Inc",
     "name": "BMO Short Federal Bond Index ETF",
-    "return3Year": 3.82,
+    "return3Year": 3.81,
     "totalAssets": 1054964032
   },
   "ZLB": {
@@ -3617,7 +3617,7 @@ const TICKER_DB = {
     "expenseRatio": 0.35,
     "family": "BMO Investments Inc.",
     "name": "BMO Low Volatility Canadian Equity ETF",
-    "return3Year": 19.26,
+    "return3Year": 19.38,
     "totalAssets": 5917432832
   },
   "ZPRV": {
@@ -3637,7 +3637,7 @@ const TICKER_DB = {
     "expenseRatio": 0.3,
     "family": "State Street Global Advisors Europe Limited",
     "name": "State Street SPDR MSCI Europe Small Cap Value Weighted UCITS ETF EUR Acc",
-    "return3Year": 19.62,
+    "return3Year": 19.7,
     "totalAssets": 840805376
   },
   "ZROZ": {
@@ -3647,7 +3647,7 @@ const TICKER_DB = {
     "expenseRatio": 0.15,
     "family": "PIMCO",
     "name": "PIMCO 25+ Year Zero Coupon U.S. Treasury Index Exchange-Traded Fund",
-    "return3Year": 0.18,
+    "return3Year": 0.69,
     "totalAssets": 1884239104
   }
 };
